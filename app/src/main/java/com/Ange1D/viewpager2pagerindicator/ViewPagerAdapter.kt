@@ -28,7 +28,8 @@ class ViewPagerAdapter : RecyclerView.Adapter<PagerVH>() {
             3->image.setImageResource(R.drawable.image4)
         }
 
-        tvDesc.text = "item $position"
+        tvTitle.text = "item Title:  $position"
+        tvDesc.text = "item Description: $position"
         container.setBackgroundResource(colors[position])
     }
 }
